@@ -3,13 +3,14 @@ package com.example.SpringBootRestful.controller;
 import com.example.SpringBootRestful.entity.User;
 import com.example.SpringBootRestful.exception.BusinessException;
 import com.example.SpringBootRestful.service.UserService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 // Todo:此处写注解
-
+@Api(tags = "my api docs")
 @RestController
 @RequestMapping("/api")
 public class UserController {
